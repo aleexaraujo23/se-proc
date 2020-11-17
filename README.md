@@ -38,7 +38,8 @@ O projeto está desenvolvido utilizando as seguintes tecnologias:
 - HIBERNATE
 - JAVA
 - MYSQL 
-- SWAGGER 
+- SWAGGER
+- FLYWAY
 
 
 ---
@@ -47,12 +48,11 @@ O projeto está desenvolvido utilizando as seguintes tecnologias:
 ## ⌨ Como Executar O Projeto
 
 
-
-
-
 1 - Tenha instalado o MYSQL em sua maquina (Posteriormente será implementado em Banco em Memória);
 
-2 - Abra o projeto em uma IDE, execute o programa e ira realizar automaticamente a atualizacao do banco de dados de classes de processo;
+2 - Altere as vaviareis USER e SENHA do do arquivo `application.properties` localizado em `/se-eproc/src/main/resources/` para seu usuário e senha do MYSQL, bem como o nome do seu banco de dados no lugar da variavel " NOME DO SEU BANCO DE DADOS " removendo as aspas.
+
+2 - Abra o projeto em uma IDE, execute o programa e ira realizar automaticamente a criacao das tabelas {FLYWAY} e atualizacao do banco de dados de classes de processos;
 
 3 - Logo apos é so abrir o endereco  `http://localhost:8080/swagger-ui.html#/` em seu navegador que verá todos os metodos disponiveis na API Documentados pelo SWAGGER;
 
