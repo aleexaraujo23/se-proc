@@ -34,7 +34,7 @@ public class VerificadorDeProcessos {
 	@Autowired
 	private Tb_ProcessoJuizRepository repTPJ;
 
-	@Scheduled(fixedDelay = SEGUNDO)
+	@Scheduled(fixedDelay = CINCO_MINUTOS)
 	public void verificaPorHora() {
 
 		// Código que realiza a consulta de fluxo de vendas
