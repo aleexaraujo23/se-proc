@@ -3,7 +3,7 @@
 ### PROJETO
 
 Esta é a Primeira versão -- V.1 -- API SE-PROC que é ultizada para o cadastro de proecessos e sua distribuicao para a analise de um juiz cadastrado no sistema
-que estaja com menor numero de processos... Uma nova versão com mais melhorias será lançada em breve!!! {Apesar do projeto ser iniciado há 2 dias, está faltando 
+que estaja com menor numero de processos... Uma nova versão com melhorias será lançada em breve!!! {Apesar do projeto ser iniciado há 2 dias, está faltando 
 apenas a funcionalide de  cadastrar as partes juntamente com o processos, e alguns testes} !!
 
 ---
@@ -20,13 +20,17 @@ apenas a funcionalide de  cadastrar as partes juntamente com o processos, e algu
 
 ## 📖 Sobre o Projeto
 
-A proposta do projeto é uma aplicação possibilitar o cadastro de processos, partes e o sistema distribuir esse processo ao juiz que tenha o menor numero de processos
- em sua responsabilidade. Como tambem gerar automaticamente o codigo do processo de acordocom a regra definida!
+A proposta do projeto é uma aplicação possibilitar o cadastro de processos, partes e o sistema distribuir esse processo ao juiz que tenha o menor numero de processos em sua responsabilidade. Como tambem gerar automaticamente o codigo do processo de acordocom a regra definida!
  
  - Listar {Partes, Processos, Juiz}
  - Adicionar {Partes, Processos, Juiz}
  - Busca {Partes, Processos, Juiz} -> {@Nome, @ID, @NumeroProcesso}
+ - API de busca de CEP para verificacao de endereco da parte.
  - API Documentada {SWAGGER}
+ 
+ - * Método {schedulleTask} de distribuicao os processos está localizado em `/src/main/java/com/tjmt/procs/domain/scheduleTask/VerificadorDeProcessos.java`.
+ - * Método gerar o numero no processo está disponivel em `src/main/java/com/tjmt/procs/domain/validacep/Util.java`.
+	
 
 --- 
 
